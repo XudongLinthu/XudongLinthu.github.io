@@ -2,7 +2,6 @@ $(document).ready(function () {
   var isSidebarVisible;
   var DURATION = 300;
   var SIDEBAR_WIDTH = 320;
-
   sidebar();
   backToTop();
 
@@ -23,5 +22,4 @@ $(document).ready(function () {
       }, DURATION);
     });
   }
-
 });
