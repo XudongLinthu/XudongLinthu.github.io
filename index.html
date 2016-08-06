@@ -5,13 +5,14 @@
 <head>
 	<meta name=viewport content='width=800'>
 	<link rel="shortcut icon" href="images/UCB.ico">
+	<!-- Hidebib Script by Deepak Pathak -->
 	<script type="text/javascript" src="hidebib.js"></script>
+	<!-- Color scheme by Jon Barron, Abhishek Kar, Saurabh Gupta, Deepak Pathak and Sergey Karayev-->
 	<style type="text/css">
-		/* Color scheme stolen from Sergey Karayev */
-
 		a {
 			color: #1772d0;
 			text-decoration: none;
+			line-height: 29px
 		}
 
 		a:focus,
@@ -24,17 +25,26 @@
 		td,
 		th {
 			font-family: 'Lato', Verdana, Helvetica, sans-serif;
-			font-size: 14px
+			font-size: 14px;
+			font-weight: 400
 		}
 
 		strong {
 			font-family: 'Lato', Verdana, Helvetica, sans-serif;
 			font-size: 14px;
+			font-weight: 800
 		}
 
 		heading {
 			font-family: 'Lato', Verdana, Helvetica, sans-serif;
-			font-size: 18px;
+			font-size: 22px;
+			font-weight: 1000
+		}
+
+		sectionheading {
+			font-family: 'Lato', Verdana, Helvetica, sans-serif;
+			font-size: 16px;
+			font-weight: 600
 		}
 
 		papertitle {
@@ -54,7 +64,7 @@
 			-webkit-transition: opacity .2s ease-in-out;
 		}
 	</style>
-	<!--    <link rel="icon" type="image/png" href="seal_icon.png">-->
+	<!-- <link href="index.css" rel="stylesheet" type="text/css"> -->
 	<meta name="google-site-verification" content="cAkAN_YwWCLDtc67SADxW5c3mlapFs-cJUSPkIff9wc" />
 	<title>Dequan Wang &thinsp;&middot;&thinsp; Computer Vision @ UC Berkeley</title>
 	<meta http-equiv="Content-Type" content="text/html; charset=us-ascii">
@@ -94,37 +104,24 @@
 									I am a first year Ph.D. student in Computer Science Department at UC Berkeley, advised by Prof. <a href="http://eecs.berkeley.edu/~trevor/">Trevor Darrell </a>. Before coming to Bay Area, I graduated from School of Computer Science at Fudan University
 									in June 2016, working with Professor Prof. <a href="https://scholar.google.com/citations?user=f3_FP8AAAAAJ">Yugang Jiang</a>, Prof. <a href="https://scholar.google.com.hk/citations?user=k0KiE4wAAAAJ">Zheng Zhang</a> and Prof. <a href="https://scholar.google.com.hk/citations?user=DTbhX6oAAAAJ">Xiangyang Xue</a>.
 								</p>
-								<!-- <p align>I am a senior student in School of Computer Science at Fudan University, advised by Prof. <a href="https://scholar.google.com/citations?user=f3_FP8AAAAAJ">Yugang Jiang</a> and Prof. <a href="https://scholar.google.com.hk/citations?user=DTbhX6oAAAAJ">Xiangyang Xue</a>. I have spent summers at New York University Shanghai, working with Prof. <a href="https://scholar.google.com.hk/citations?user=k0KiE4wAAAAJ">Zheng Zhang</a>. -->
 
 								<p align=center>
-									<a href="mailto:dequanwang@berkeley.edu">Email</a> &nbsp/&nbsp
-									<!-- <a href="DequanWang-Resume.pdf" target="_blank">Resume</a> &nbsp/&nbsp -->
-									<a href="CV.html" target="_blank">CV</a> &nbsp/&nbsp
-									<!-- <a href="DequanWang-bio.txt">Biography</a> &nbsp/&nbsp -->
-									<!-- <a href="DequanWang-thesis.pdf">Thesis</a> &nbsp/&nbsp -->
-									<a href="https://github.com/DequanWang" target="_blank">Github</a> &nbsp/&nbsp
-									<a href="https://www.linkedin.com/in/dequanwang" target="_blank">LinkedIn</a> &nbsp/&nbsp
+									<a href="about.html" target="_blank">About</a> &nbsp|&nbsp
+									<a href="mailto:dequanwang@berkeley.edu">Email</a> &nbsp|&nbsp
+									<a href="DequanWangCV.pdf" target="_blank">CV</a> &nbsp|&nbsp
+									<a href="https://github.com/DequanWang" target="_blank">Github</a> &nbsp|&nbsp
+									<a href="https://www.linkedin.com/in/dequanwang" target="_blank">LinkedIn</a> &nbsp|&nbsp
 									<a href="https://scholar.google.com/citations?user=e5zjbZEAAAAJ" target="_blank">Google Scholar</a>
-									<!-- <a href="RS.html" target="_blank">Research Statement</a>-->
 								</p>
 								<!-- <center><font color="red">Live in the future, then build what's missing.</font></center> -->
 						</td>
 						<td width="33%">
-							<img src="images/DequanWang.jpg" width="180" />
+							<img src="images/DequanWang.jpg" width="80%" />
 						</td>
 					</tr>
 				</table>
-				<table width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
-					<tr>
-						<td>
-							<heading>Research</heading>
-							<!-- <p>My research focuses on computer vision and machine learning.</p> -->
-							<p>
-								<center>My research focuses on computer vision and machine learning, especially for fine-grained categorization.</center>
-							</p>
-						</td>
-					</tr>
-				</table>
+
+				<heading>Research</heading>
 				<table width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
 					<tr>
 						<td width="20%"><img src="images/DequanWang-ICCV2015.png" alt="PontTrust" width="160" style="border-style: none"></td>
@@ -137,34 +134,23 @@
 								<strong>Dequan Wang</strong>, Zhiqiang Shen, Jie Shao, Wei Zhang, Xiangyang Xue, Zheng Zhang
 								<br>
 								<em>International Conference on Computer Vision (ICCV)</em>, 2015
-								<br>
-								<!--                                <a href="#">project page</a> /-->
-								<!-- <a href="DequanWang-ICCV2015-Abstract.pdf">abstract</a> / -->
-								<a href="javascript:toggleblock('ICCV2015')">bibtex</a> &nbsp/&nbsp
-								<a href="DequanWang-ICCV2015-Poster.pdf" target="_blank">poster</a>
-								<!-- <a href="DequanWang-ICCV2015.key">keynote</a> / -->
-								<!-- <a href="http://www.youtube.com/watch?v=*">video</a>-->
-								<!-- <a href="DequanWang-ICCV2015.zip">code</a>-->
-								<p></p>
-								<p>We leverage the fact that a subordinate-level object already has other labels in its ontology tree. These <i>free</i> labels can be used to train a series of CNN-based classifiers, avoiding the use of labor-intensive bounding box or part annotations.
-									<p></p>
-									</a>
-								</p>
-								<pre xml:space="preserve" id="ICCV2015">
-								@inproceedings{wang2015multiple,
-								  title={Multiple Granularity Descriptors
-								        for Fine-grained Categorization},
-								  author={Wang, Dequan and Shen, Zhiqiang and Shao, Jie
-								  and Zhang, Wei and Xue, Xiangyang and Zhang, Zheng},
-								  booktitle={Proceedings of the IEEE
-								  International Conference on Computer Vision},
-								  year={2015}
-								}
-							</pre>
-						</td>
-						<script language="javascript" type="text/javascript" xml:space="preserve">
-							hideblock('ICCV2015');
-						</script>
+
+								<div class="Pub" id="ICCV15">
+									<a href="javascript:toggleblock(&#39;ICCV15ABS&#39;)">abstract</a> &nbsp|&nbsp
+									<a href="javascript:toggleblock('ICCV2015')">bibtex</a> &nbsp|&nbsp
+									<a href="DequanWang-ICCV2015-Poster.pdf" target="_blank">poster</a>
+									<p align="justify"> <i id="ICCV15ABS" style="display: none;">Fine-grained categorization, which aims to distinguish subordinate-level categories such as bird species or dog breeds, is an extremely challenging task. This is due to two main issues: how to localize discriminative regions for recognition and how to learn sophisticated features for representation. Neither of them is easy to handle if there is insufficient labeled data. We leverage the fact that a subordinate-level object already has other labels in its ontology tree. These &quot; free &quot; labels can be used to train a series of CNN-based classifiers, each specialized at one grain level. The internal representations of these networks have different region of interests, allowing the construction of multi-grained descriptors that encode informative and discriminative features covering all the grain levels. Our multiple granularity framework can be learned with the weakest supervision, requiring only image-level label and avoiding the use of labor-intensive bounding box or part annotations. Experimental results on three challenging fine-grained image datasets demonstrate that our approach outperforms state-of-the-art algorithms, including those requiring strong labels.</i></p>
+									<pre xml:space="preserve" style="display: none; " id="ICCV2015">@inproceedings{wang2015multiple,
+	title={Multiple Granularity Descriptors
+	for Fine-grained Categorization},
+	author={Wang, Dequan and Shen, Zhiqiang and Shao, Jie
+	and Zhang, Wei and Xue, Xiangyang and Zhang, Zheng},
+	booktitle={Proceedings of the IEEE
+	International Conference on Computer Vision},
+	year={2015}
+	}
+							</div>
+								</td>
 					</tr>
 					<!-- <tr>
 								<td width="20%"><img src="images/DequanWang-CVPR2016.png" alt="PontTrust" width="160" style="border-style: none"></td>
@@ -175,6 +161,7 @@
 											</a>
 											<br> Zhiqiang Shen, <strong>Dequan Wang</strong>, Yu-Gang Jiang, Hai Chi, Xiangyang Xue
 											<br> Submitted to <em>Computer Vision and Pattern Recognition (CVPR)</em>, 2016
+											&nbsp <font color="red"><strong>(Oral Presentation)</strong></font>
 											<br>
 											<p>We propose a unified convolutional neural network architecture to extract and utilize clues from both objects and parts via transferring annotations across multiple datasets.
 														<p></p>
@@ -213,29 +200,23 @@
 								<br> Wei Zhang, Sheng Zeng, <strong>Dequan Wang</strong>, Xiangyang Xue
 								<br>
 								<em>Computer Vision and Pattern Recognition (CVPR)</em>, 2015
-								<!--&nbsp <font color="red"><strong>(Oral Presentation)</strong></font>-->
-								<br>
-								<a href="DequanWang-CVPR2015-Abstract.pdf">abstract</a> &nbsp/&nbsp
-								<a href="javascript:toggleblock('CVPR2015')">bibtex</a>
-								<br>
-								<p>We learn a weakly supervised semantic segmentation model from social images whose labels are not pixellevel but image-level, furthermore, these labels might be <i>noisy</i>.</p>
-								</a>
-							</p>
-							<pre xml:space="preserve" id="CVPR2015">
-			@inproceedings{zhang2015weakly,
-			  title={Weakly Supervised Semantic Segmentation
-			        for Social Images},
-			  author={Zhang, Wei and Zeng, Sheng and
-			          Wang, Dequan and Xue, Xiangyang},
-			  booktitle={Proceedings of the IEEE Conference on
-			        Computer Vision and Pattern Recognition},
-			  year={2015}
-			}
+
+								<div class="Pub" id="CVPR15">
+								<a href="javascript:toggleblock(&#39;CVPR15ABS&#39;)">abstract</a> &nbsp|&nbsp
+								<a href="javascript:toggleblock('CVPR2015')">bibtex</a> &nbsp|&nbsp
+								<a href="DequanWang-CVPR2015-Abstract.pdf" target="_blank">extended abstract</a>
+								<p align="justify"> <i id="CVPR15ABS" style="display: none;">Image semantic segmentation is the task of partitioning image into several regions based on semantic concepts. In this paper, we learn a weakly supervised semantic segmentation model from social images whose labels are not pixellevel but image-level; furthermore, these labels might be noisy. We present a joint conditional random field model leveraging various contexts to address this issue. More specifically, we extract global and local features in multiple scales by convolutional neural network and topic model. Inter-label correlations are captured by visual contextual cues and label co-occurrence statistics. The label consistency between image-level and pixel-level is finally achieved by iterative refinement. Experimental results on two realworld image datasets PASCAL VOC2007 and SIFT-Flow demonstrate that the proposed approach outperforms stateof-the-art weakly supervised methods and even achieves accuracy comparable with fully supervised methods.</i></p>
+							<pre xml:space="preserve" style="display: none;" id="CVPR2015">@inproceedings{zhang2015weakly,
+	title={Weakly Supervised Semantic Segmentation
+	for Social Images},
+	author={Zhang, Wei and Zeng, Sheng and
+	        Wang, Dequan and Xue, Xiangyang},
+  	booktitle={Proceedings of the IEEE Conference
+	on Computer Vision and Pattern Recognition},
+	year={2015}
+	}
 		</pre>
 						</td>
-						<script language="javascript" type="text/javascript" xml:space="preserve">
-							hideblock('CVPR2015');
-						</script>
 					</tr>
 				</table>
 				<!-- <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
