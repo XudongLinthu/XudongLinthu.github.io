@@ -1,96 +1,209 @@
+<!-- Inspired by Carl Vondrick, Jon Barron, Abhishek Kar, Saurabh Gupta, Deepak Pathak and Sergey Karayev-->
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
 <html>
 
 <head>
-	<!-- <meta name=viewport content='width=800'> -->
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="shortcut icon" href="images/UCB.ico">
-	<!-- Hidebib Script by Deepak Pathak -->
-	<script type="text/javascript" src="hidebib.js"></script>
-	<!-- Color scheme by Jon Barron, Abhishek Kar, Saurabh Gupta, Deepak Pathak and Sergey Karayev-->
-	<style type="text/css">
-		a {
-			color: #1772d0;
-			text-decoration: none;
-			line-height: 29px
+	<!-- <title>Dequan Wang - Computer Vision - UC Berkeley</title> -->
+	<meta name="google-site-verification" content="cAkAN_YwWCLDtc67SADxW5c3mlapFs-cJUSPkIff9wc" />
+	<title>Dequan Wang &thinsp;&middot;&thinsp; Computer Vision @ UC Berkeley</title>
+	<link href='//fonts.googleapis.com/css?family=Lato:300,400,700' rel='stylesheet' type='text/css'>
+	<style>
+		@media screen and (max-device-width: 480px) {
+			body {
+				-webkit-text-size-adjust: 100%;
+			}
 		}
 
-		a:focus,
-		a:hover {
-			color: #f09228;
-			text-decoration: none;
+		p {
+			font-size: 17px;
 		}
 
-		body,
-		td,
-		th {
-			font-family: 'Lato', Verdana, Helvetica, sans-serif;
-			font-size: 14px;
-			font-weight: 400
+		h1 {
+			padding: 0;
+			margin: 0;
+			font-size: 38px;
 		}
 
-		strong {
-			font-family: 'Lato', Verdana, Helvetica, sans-serif;
-			font-size: 14px;
-			font-weight: 800
+		h2 {
+			font-size: 28px;
+			margin: 0;
+			padding: 0;
 		}
 
-		heading {
-			font-family: 'Lato', Verdana, Helvetica, sans-serif;
-			font-size: 22px;
-			font-weight: 1000
+		h3 {
+			margin: 24px 0;
 		}
 
-		sectionheading {
-			font-family: 'Lato', Verdana, Helvetica, sans-serif;
-			font-size: 16px;
-			font-weight: 600
+		body {
+			padding: 0;
+			font-family: 'Lato', sans-serif;
+			font-size: 17px;
 		}
 
-		papertitle {
-			font-family: 'Lato', Verdana, Helvetica, sans-serif;
-			font-size: 15px;
-			font-weight: 700
+		.title {
+			width: 800px;
+			margin: 20px auto;
+			color: #000;
+			margin-top: 30px;
 		}
 
-		name {
-			font-family: 'Lato', Verdana, Helvetica, sans-serif;
-			font-size: 32px;
-		}
-
-		.one {
-			width: 160px;
-			height: 160px;
+		.title a,
+		.title a:visited {
 			position: relative;
 		}
 
-		.two {
-			width: 160px;
-			height: 160px;
-			position: absolute;
-			transition: opacity .2s ease-in-out;
-			-moz-transition: opacity .2s ease-in-out;
-			-webkit-transition: opacity .2s ease-in-out;
+		.container {
+			width: 800px;
+			margin: 10px auto;
+			border-radius: 20px;
+			padding: 15px;
+			clear: both;
 		}
 
-		.fade {
-			transition: opacity .2s ease-in-out;
-			-moz-transition: opacity .2s ease-in-out;
-			-webkit-transition: opacity .2s ease-in-out;
+		#bio {
+			height: 250px;
+			position: relative;
+			float: left;
+			width: 400px;
 		}
 
-		span.highlight {
-			background-color: #ffffd0;
+		#me {
+			border: 0 solid black;
+			margin-bottom: 30px;
+			border-radius: 10px;
+		}
+
+		#sidebar {
+			margin-left: 80px;
+			margin-right: 50px;
+			border: 0 solid black;
+			float: left;
+			margin-bottom: 0;
+		}
+
+		a {
+			text-decoration: none;
+		}
+
+		a:hover {
+			text-decoration: underline;
+		}
+
+		a,
+		a:visited {
+			color: #3366cc;
+		}
+
+		.publogo {
+			margin-right: 20px;
+			float: left;
+			border: 0;
+		}
+
+		.publication {
+			clear: left;
+			padding-bottom: 3px;
+		}
+
+		.publication-short {
+			padding-left: 120px;
+		}
+
+		.publication p {
+			height: 100px;
+			padding-top: 0px;
+		}
+
+		.publication-short p {
+			height: 0;
+		}
+
+		.publication strong a {
+			color: #000;
+			text-decoration: none;
+		}
+
+		.publication strong a:hover {
+			text-decoration: underline;
+		}
+
+		.publication .links {
+			position: relative;
+			top: 15px
+		}
+
+		.publication .links a {
+			margin-right: 20px;
+		}
+
+		.publication .links strong {
+			margin-right: 20px;
+		}
+
+		.publication img {
+			border-radius: 5px;
+		}
+
+		.codelogo {
+			margin-right: 50px;
+			float: left;
+			border: 0;
+		}
+
+		.code {
+			padding-bottom: 10px;
+			vertical-align: middle;
+			height: 150px !important;
+			width: 550px;
+		}
+
+		.code .download a {
+			display: block;
+			margin: 0 30px 0 0;
+			float: left;
+		}
+
+		.code strong {
+			display: block;
+			padding-bottom: 10px;
+		}
+
+		.code strong a {
+			color: #000;
+		}
+
+		.code img {
+			border-radius: 5px;
+		}
+
+		.external a {
+			margin: 0 10px;
+		}
+
+		.external a.first {
+			margin: 0 10px 0 0;
+		}
+
+		#news li {
+			padding: 5px 0;
+		}
+
+		#news strong a {
+			color: black;
 		}
 	</style>
-	<!-- <link href="index.css" rel="stylesheet" type="text/css"> -->
-	<meta name="google-site-verification" content="cAkAN_YwWCLDtc67SADxW5c3mlapFs-cJUSPkIff9wc" />
-	<title>Dequan Wang &thinsp;&middot;&thinsp; Computer Vision @ UC Berkeley</title>
-	<meta http-equiv="Content-Type" content="text/html; charset=us-ascii">
-	<link href='http://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
-</head>
 
-<body>
+	<script type="text/javascript">
+		var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+		document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+	</script>
+	<script type="text/javascript">
+		try {
+			var pageTracker = _gat._getTracker("UA-77517955-1");
+			pageTracker._trackPageview();
+		} catch (err) {}
+	</script>
+
 	<script type="text/javascript">
 		window._pt_lt = new Date().getTime();
 		window._pt_sp_2 = [];
@@ -110,211 +223,70 @@
 			s.parentNode.insertBefore(stag, s);
 		})();
 	</script>
-	<table width="800" border="0" align="center" cellspacing="0" cellpadding="0">
-		<tr>
-			<td>
-				<table width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
-					<tr>
-						<td width="67%" valign="middle">
-							<p align="center">
-								<name>Dequan Wang</name>
-								</font>
-								<p>
-									I am a first year Ph.D. student in Computer Science Department at UC Berkeley, advised by Prof. <a href="http://eecs.berkeley.edu/~trevor/">Trevor Darrell </a>. Before coming to Bay Area, I graduated from School of Computer Science at Fudan University
-									in June 2016, working with Professor Prof. <a href="https://scholar.google.com/citations?user=f3_FP8AAAAAJ">Yugang Jiang</a>, Prof. <a href="https://scholar.google.com.hk/citations?user=k0KiE4wAAAAJ">Zheng Zhang</a> and Prof. <a href="https://scholar.google.com.hk/citations?user=DTbhX6oAAAAJ">Xiangyang Xue</a>.
-								</p>
 
-								<p align=center>
-									<a href="about.html" target="_blank">About</a> &nbsp|&nbsp
-									<a href="mailto:dqwang@eecs.berkeley.edu">Email</a> &nbsp|&nbsp
-									<a href="DequanWangCV.pdf" target="_blank">CV</a> &nbsp|&nbsp
-									<a href="https://github.com/DequanWang" target="_blank">Github</a> &nbsp|&nbsp
-									<a href="https://www.linkedin.com/in/dequanwang" target="_blank">LinkedIn</a> &nbsp|&nbsp
-									<a href="https://scholar.google.com/citations?user=e5zjbZEAAAAJ" target="_blank">Google Scholar</a>
-								</p>
-								<!-- <center><font color="red">Live in the future, then build what's missing.</font></center> -->
-						</td>
-						<td width="33%">
-							<img src="images/DequanWang.jpg" width="80%" />
-						</td>
-					</tr>
-				</table>
+	<link rel="shortcut icon" href="images/UCB.ico">
 
-				<heading>Research</heading>
-				<table width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
-					<tr>
-						<td width="20%"><img src="images/DequanWang-ICCV2015.png" alt="PontTrust" width="160" style="border-style: none"></td>
-						<td valign="top" width="80%">
-							<p>
-								<a href="DequanWang-ICCV2015.pdf" target="_blank">
-									<papertitle>Multiple Granularity Descriptors for Fine-grained Categorization</papertitle>
-								</a>
-								<br>
-								<strong>Dequan Wang</strong>, Zhiqiang Shen, Jie Shao, Wei Zhang, Xiangyang Xue, Zheng Zhang
-								<br>
-								<em>International Conference on Computer Vision (ICCV)</em>, 2015
+</head>
 
-								<div class="Pub" id="ICCV15">
-									<a href="javascript:toggleblock(&#39;ICCV15ABS&#39;)">abstract</a> &nbsp|&nbsp
-									<a href="javascript:toggleblock('ICCV2015')">bibtex</a> &nbsp|&nbsp
-									<a href="DequanWang-ICCV2015-Poster.pdf" target="_blank">poster</a>
-									<p align="justify"> <i id="ICCV15ABS" style="display: none;">Fine-grained categorization, which aims to distinguish subordinate-level categories such as bird species or dog breeds, is an extremely challenging task. This is due to two main issues: how to localize discriminative regions for recognition and how to learn sophisticated features for representation. Neither of them is easy to handle if there is insufficient labeled data. We leverage the fact that a subordinate-level object already has other labels in its ontology tree. These &quot; free &quot; labels can be used to train a series of CNN-based classifiers, each specialized at one grain level. The internal representations of these networks have different region of interests, allowing the construction of multi-grained descriptors that encode informative and discriminative features covering all the grain levels. Our multiple granularity framework can be learned with the weakest supervision, requiring only image-level label and avoiding the use of labor-intensive bounding box or part annotations. Experimental results on three challenging fine-grained image datasets demonstrate that our approach outperforms state-of-the-art algorithms, including those requiring strong labels.</i></p>
-									<pre xml:space="preserve" style="display: none; " id="ICCV2015">@inproceedings{wang2015multiple,
-	title={Multiple Granularity Descriptors
-	for Fine-grained Categorization},
-	author={Wang, Dequan and Shen, Zhiqiang and Shao, Jie
-	and Zhang, Wei and Xue, Xiangyang and Zhang, Zheng},
-	booktitle={Proceedings of the IEEE
-	International Conference on Computer Vision},
-	year={2015}
-	}
-							</div>
-								</td>
-					</tr>
-					<!-- <tr>
-								<td width="20%"><img src="images/DequanWang-CVPR2016.png" alt="PontTrust" width="160" style="border-style: none"></td>
-								<td valign="top" width="80%">
-											<p>
-														<a href="DequanWang-CVPR2016.pdf" target="_blank">
-														<papertitle>Harnessing Off-the-Shelf Labels for Fine-grained Recognition</papertitle>
-											</a>
-											<br> Zhiqiang Shen, <strong>Dequan Wang</strong>, Yu-Gang Jiang, Hai Chi, Xiangyang Xue
-											<br> Submitted to <em>Computer Vision and Pattern Recognition (CVPR)</em>, 2016
-											&nbsp <font color="red"><strong>(Oral Presentation)</strong></font>
-											<br>
-											<p>We propose a unified convolutional neural network architecture to extract and utilize clues from both objects and parts via transferring annotations across multiple datasets.
-														<p></p>
-											</a>
-								</p>
-					</td>
-				</tr> -->
-					<!-- <tr>
-							<td width="20%"><img src="images/DequanWang-AAAI2016.png" alt="PontTrust" width="160" style="border-style: none"></td>
-							<td width="80%" valign="top">
-										<p>
-													<a href="DequanWang-AAAI2016.pdf" target="_blank">
-													<papertitle>Iterative Object and Part Transfer for Fine-Grained Recognition</papertitle>
-										</a>
-										<br> Zhiqiang Shen, <strong>Dequan Wang</strong>, Yu-Gang Jiang, Haoran Wang, Xiangyang Xue
-										<br>
-										Submitted to <em>American Association for Artificial Intelligence (AAAI)</em>, 2016
-										<br>
-										<a href="DequanWang-AAAI2016-Abstract">abstract</a> /
-										<a href="DequanWang-AAAI2016.bib">bibtex</a> /
-										<a href="DequanWang-AAAI2016-Poster.pdf">poster</a>
-										<br>
-										<p>We propose a <i>nonparametric</i> data-driven method, an iterative transfer strategy that gradually refines the predicted bounding boxes, for object and part localization. </p>
-							</a>
-				</p>
-			</td>
-		</tr>
-		-->
-					<tr>
-						<td width="20%"><img src="images/DequanWang-CVPR2015.png" alt="PontTrust" width="160" style="border-style: none"></td>
-						<td width="80%" valign="top">
-							<p>
-								<a href="DequanWang-CVPR2015.pdf" target="_blank">
-									<papertitle>Weakly Supervised Semantic Segmentation for Social Images</papertitle>
-								</a>
-								<br> Wei Zhang, Sheng Zeng, <strong>Dequan Wang</strong>, Xiangyang Xue
-								<br>
-								<em>Computer Vision and Pattern Recognition (CVPR)</em>, 2015
+<body>
 
-								<div class="Pub" id="CVPR15">
-								<a href="javascript:toggleblock(&#39;CVPR15ABS&#39;)">abstract</a> &nbsp|&nbsp
-								<a href="javascript:toggleblock('CVPR2015')">bibtex</a> &nbsp|&nbsp
-								<a href="DequanWang-CVPR2015-Abstract.pdf" target="_blank">extended abstract</a>
-								<p align="justify"> <i id="CVPR15ABS" style="display: none;">Image semantic segmentation is the task of partitioning image into several regions based on semantic concepts. In this paper, we learn a weakly supervised semantic segmentation model from social images whose labels are not pixellevel but image-level; furthermore, these labels might be noisy. We present a joint conditional random field model leveraging various contexts to address this issue. More specifically, we extract global and local features in multiple scales by convolutional neural network and topic model. Inter-label correlations are captured by visual contextual cues and label co-occurrence statistics. The label consistency between image-level and pixel-level is finally achieved by iterative refinement. Experimental results on two realworld image datasets PASCAL VOC2007 and SIFT-Flow demonstrate that the proposed approach outperforms stateof-the-art weakly supervised methods and even achieves accuracy comparable with fully supervised methods.</i></p>
-							<pre xml:space="preserve" style="display: none;" id="CVPR2015">@inproceedings{zhang2015weakly,
-	title={Weakly Supervised Semantic Segmentation
-	for Social Images},
-	author={Zhang, Wei and Zeng, Sheng and
-	        Wang, Dequan and Xue, Xiangyang},
-  	booktitle={Proceedings of the IEEE Conference
-	on Computer Vision and Pattern Recognition},
-	year={2015}
-	}
-		</pre>
-						</td>
-					</tr>
-				</table>
-				<!-- <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
-<tr>
-	<td>
+	<div class="title">
+		<div id="sidebar"><img src="images/DequanWang.jpg" id="me" width="200" itemprop="photo"></div>
+
+		<div id="bio">
+			<div style="position:absolute;top:29px;">
+				<h1><span itemprop="name">Dequan Wang</span></h1>
+				<bt>
+
+					<p style="line-height:23px;">Ph.D. Student at UC Berkeley
+						<br>
+						<a href="mailto:dqwang@eecs.berkeley.edu">dqwang@eecs.berkeley.edu</a></p>
+					<p class="external"><a href="pdfs/DequanWangCV.pdf" class="first" target="_blank">Resume</a> &bull; <a href="https://github.com/DequanWang" target="_blank">Github</a> &bull; <a href="https://scholar.google.com/citations?user=e5zjbZEAAAAJ&hl=en" target="_blank">Scholar</a></p>
+			</div>
+		</div>
+
+	</div>
+
+	<div class="container">
+		<h2>About Me</h2>
+
+		<p>I am a first year Computer Science Ph.D. student at UC Berkeley, advised by Prof. <a href="https://scholar.google.com/citations?user=bh-uRFMAAAAJ&hl=en" target="_blank">Trevor Darrell</a>.</p>
+
+		<p>Before coming to Bay Area, I graduated from School of Computer Science at Fudan University in June 2016, working with Professor Prof. <a href="https://scholar.google.com/citations?user=f3_FP8AAAAAJ" target="_blank">Yu-Gang Jiang</a>, Prof. <a href="https://scholar.google.com.hk/citations?user=k0KiE4wAAAAJ"
+							target="_blank">Zheng Zhang</a>, and Prof. <a href="https://scholar.google.com.hk/citations?user=DTbhX6oAAAAJ" target="_blank">Xiangyang Xue</a>.</p>
+
+		<!-- <p>My research studies computer vision and machine learning. Scene understanding models excel with large amounts of labeled data, however this is expensive to scale. My work explores how to efficiently leverage human effort and unlabeled data in order to create more powerful perception systems.</p>  -->
+
+	</div>
+
+	<div class="container">
+		<h2>Recent Papers</h2>
 		<br>
-		<p align="right">
-			<center><font color="grey">&ldquo;Live in the future, then build what's missing.&rdquo; &mdash; Paul Grahmam</font></center>
-		</p>
-	</td>
-</tr>
-</table> -->
-				<!-- <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
-<tr>
-			<td>
-			<heading>Selected Honors</heading>
-</td>
-</tr>
-</table>
-<table width="100%" align="center" border="0" cellpadding="20">
-<tr>
-<td width="20%"><img src="images/chuntsung.png" alt="PontTrust" width="100" style="border-style: none"></td>
-<td width="80%" valign="top">
-			<p>
-			<papertitle>Chun-Tsung Research Grant</papertitle>
-			<br> Entitled by <em>Nobel Laureate Dr. Tsung-Dao Lee</em>, 2015
-			<br>
-			<p>Supported by the Hui-Chun Chin and Tsung-Dao Lee Chinese Undergraduate Research Endowment(CURE) for undergraduate research of fine-grained categorization.</p>
-</a>
-</p>
-</td>
-</tr>
-<tr>
-<td width="20%"><img src="images/csc.png" alt="PontTrust" width="100" style="border-style: none"></td>
-<td width="80%" valign="top">
-<p>
-<papertitle>Excellent Undergraduate Scholarship</papertitle>
-<br> Issued by <em>China Scholarship Council &amp; IBM</em>, 2015
-<br>
-<p>Only undergraduate prize-winner in Fudan University, 70 students are selected nationwide.</p>
-</a>
-</p>
-</td>
-</tr>
-<tr>
-<td width="20%"><img src="images/ccf.png" alt="PontTrust" width="100" style="border-style: none"></td>
-<td width="80%" valign="top">
-<p>
-<papertitle>Outstanding Undergraduate</papertitle>
-<br> Issued by <em>Chinese Computer Federation</em>, 2014
-<br>
-<p>Only prize-winner in Fudan University, 100 students in China are awarded every year.</p>
-</a>
-</p>
-</td>
-</tr> -->
-	</table>
-	</font>
-	</p>
-	</td>
-	</tr>
-	</table>
-	<!-- <center><font color="grey">&ldquo;Live in the future, then build what's missing.&rdquo; &mdash; Paul Grahmam</font></center> -->
-	<!-- <center><font color="grey">&ldquo;Vision is the art of seeing what is invisible to others.&rdquo; &mdash; Jonathan Swift</font></center> -->
-	<center><font color="grey">&ldquo;Vision is the art of seeing what is invisible to others.&rdquo; </font></center>
-	<!-- <center><font color="gray"> "Vision is the art of seeing what is invisible to others." </font></center> -->
-	<script type="text/javascript">
-		var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
-		document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
-	</script>
-	<script type="text/javascript">
-		try {
-			var pageTracker = _gat._getTracker("UA-77517955-1");
-			pageTracker._trackPageview();
-		} catch (err) {}
-	</script>
-	</td>
-	</tr>
-	</table>
-</body>
+		<!-- <h2>Papers by Project</h2> -->
 
+		<!-- <h3>Fine-grained Categorization</h3> -->
+
+		<div class="publication">
+			<!-- <a href="pdfs/DequanWang-ICCV2015.pdf" target="_blank"><img src="images/blank.png" class="publogo" width="100" height="100" style="border:1px solid #ccc; background-color : #f2f2f2;"></a> -->
+			<p><strong>Multiple Granularity Descriptors for Fine-grained Categorization</a></strong>
+				<br> Dequan Wang, Zhiqiang Shen, Jie Shao, Wei Zhang, Xiangyang Xue, Zheng Zhang
+				<br>
+				<em>International Conference on Computer Vision (ICCV), 2015</em>
+				<br>
+				<span class="links"><a href="pdfs/DequanWang-ICCV2015.pdf" target="_blank">Paper</a> </span>
+		</div>
+
+		<div class="publication">
+			<!-- <a href="pdfs/DequanWang-CVPR2015.pdf" target="_blank"><img src="images/blank.png" class="publogo" width="100" height="100" style="border:1px solid #ccc; background-color : #f2f2f2"></a> -->
+			<p><strong>Weakly Supervised Semantic Segmentation for Social Images</a></strong>
+				<br> Wei Zhang, Sheng Zeng, Dequan Wang, Xiangyang Xue
+				<br>
+				<em>Computer Vision and Pattern Recognition (CVPR), 2015</em>
+				<br>
+				<span class="links"><a href="pdfs/DequanWang-CVPR2015.pdf" target="_blank">Paper</a> </span>
+		</div>
+
+		<p style="text-align:center;font-size:17px;padding-top:20px; width : 400px; margin:0 auto; padding-bottom:50px; color:#000;"><font color="grey">&ldquo;Vision is the art of seeing what is invisible to others.&rdquo;</a></p>
+
+</body>
 </html>
